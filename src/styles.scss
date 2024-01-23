@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+:root {
+  --primary-color: #555; /* Couleur pour le mode jour */
+  --background-color: #fff; /* Fond pour le mode jour */
+  --navbar-bg-color: #f8f9fa; /* Couleur du navbar pour le mode jour */
+
+}
+
+body.night-mode {
+  --primary-color: #ddd; /* Couleur pour le mode nuit */
+  --background-color: #333; /* Fond pour le mode nuit */
+  --navbar-bg-color: #343a40; /* Couleur du navbar pour le mode nuit */
+
+}
+
+/* Appliquer les variables */
+body {
+  color: var(--primary-color);
+  background-color: var(--background-color);
+
+}
+

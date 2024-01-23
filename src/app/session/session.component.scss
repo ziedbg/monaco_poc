@@ -1,0 +1,9 @@
+.content {
+    display: flow-root;
+  flex-direction: column;
+  height: calc(100vh - 143px); /* Prend toute la hauteur moins la hauteur des boutons */
+}
+
+.button-container {
+  height: 60px; /* Hauteur fixe pour les boutons */
+}

@@ -1,0 +1,37 @@
+
+/* Styles pour le header/navbar */
+.navbar {
+  margin-bottom: 20px;
+  background-color: var(--navbar-bg-color);
+}
+
+.theme-toggle-btn {
+  background-color: transparent; /* Fond transparent */
+  border: none; /* Pas de bordure */
+  color: #4A4A4A; /* Couleur de l'icône en mode jour */
+}
+
+/* Effet au survol du bouton */
+.theme-toggle-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Légèrement plus sombre au survol */
+}
+
+/* Style pour le mode nuit */
+body.night-mode .theme-toggle-btn {
+  color: #FFF; /* Couleur blanche en mode nuit */
+}
+
+/* Changer le style au survol en mode nuit */
+body.night-mode .theme-toggle-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Fond légèrement plus clair au survol */
+}
+
+
+
+
+.small {
+  font-size: 0.8rem; /* Ajustez selon vos besoins */
+}
+.badge-info {
+  background-color: #17a2b8; /* Couleur de votre choix */
+}

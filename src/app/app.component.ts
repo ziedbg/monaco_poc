@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'monaco-poc';
+  isNightMode = false;
+
+  toggleTheme() {
+    this.isNightMode = !this.isNightMode;
+    document.body.classList.toggle('night-mode');
+  }
 }

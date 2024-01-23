@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  app:
+    container_name: monaco_poc
+    build:
+      context: .
+      target: development
+    user: "myuser"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "4200:4200"
+    environment:
+      - NODE_ENV=development
+    command: ng serve --host 0.0.0.0 --port 4200
